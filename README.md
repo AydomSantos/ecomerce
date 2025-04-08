@@ -15,12 +15,6 @@ Este projeto é uma aplicação de e-commerce desenvolvida utilizando PHP, HTML,
 - **JavaScript**: Para interatividade no lado do cliente.
 - **Composer**: Gerenciador de dependências PHP.
 
-## Funcionalidades Implementadas
-- Listagem de produtos
-- Adição ao carrinho
-- Processamento de pagamentos
-- Autenticação de usuários
-
 ## Configuração e Execução
 1. Instale o XAMPP para configurar o ambiente PHP.
 2. Clone o repositório para o diretório `htdocs` do XAMPP.
