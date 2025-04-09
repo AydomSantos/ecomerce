@@ -158,6 +158,7 @@
             "install-path": "../league/route"
         },
         {
+<<<<<<< HEAD
             "name": "myclabs/deep-copy",
             "version": "1.13.0",
             "version_normalized": "1.13.0.0",
@@ -221,6 +222,8 @@
             "install-path": "../myclabs/deep-copy"
         },
         {
+=======
+>>>>>>> 63ba0037a64ef6dc88e139907ce4a86d1a6133b6
             "name": "nikic/fast-route",
             "version": "v1.3.0",
             "version_normalized": "1.3.0.0",
@@ -274,6 +277,7 @@
             "install-path": "../nikic/fast-route"
         },
         {
+<<<<<<< HEAD
             "name": "nikic/php-parser",
             "version": "v5.4.0",
             "version_normalized": "5.4.0.0",
@@ -899,6 +903,8 @@
             "install-path": "../phpunit/phpunit"
         },
         {
+=======
+>>>>>>> 63ba0037a64ef6dc88e139907ce4a86d1a6133b6
             "name": "psr/container",
             "version": "2.0.2",
             "version_normalized": "2.0.2.0",
@@ -1242,6 +1248,7 @@
             "install-path": "../psr/simple-cache"
         },
         {
+<<<<<<< HEAD
             "name": "sebastian/cli-parser",
             "version": "2.0.1",
             "version_normalized": "2.0.1.0",
@@ -2203,6 +2210,8 @@
             "install-path": "../sebastian/version"
         },
         {
+=======
+>>>>>>> 63ba0037a64ef6dc88e139907ce4a86d1a6133b6
             "name": "symfony/deprecation-contracts",
             "version": "v3.5.1",
             "version_normalized": "3.5.1.0",
@@ -2438,6 +2447,7 @@
             "install-path": "../symfony/polyfill-mbstring"
         },
         {
+<<<<<<< HEAD
             "name": "theseer/tokenizer",
             "version": "1.2.3",
             "version_normalized": "1.2.3.0",
@@ -2491,6 +2501,8 @@
             "install-path": "../theseer/tokenizer"
         },
         {
+=======
+>>>>>>> 63ba0037a64ef6dc88e139907ce4a86d1a6133b6
             "name": "twig/twig",
             "version": "v3.20.0",
             "version_normalized": "3.20.0.0",
@@ -2574,6 +2586,7 @@
         }
     ],
     "dev": true,
+<<<<<<< HEAD
     "dev-package-names": [
         "myclabs/deep-copy",
         "nikic/php-parser",
@@ -2602,4 +2615,7 @@
         "sebastian/version",
         "theseer/tokenizer"
     ]
+=======
+    "dev-package-names": []
+>>>>>>> 63ba0037a64ef6dc88e139907ce4a86d1a6133b6
 }

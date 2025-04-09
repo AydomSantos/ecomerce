@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 namespace Aydom\Ecomerce\Controllers;
 use Aydom\Ecomerce\Models\Product;
 
@@ -179,5 +180,12 @@ class ProductController {
 
         // Renderizar confirmação
         include __DIR__ . '/../views/product/delete.php';
+=======
+namespace App\Controllers; 
+
+class ProductController {
+    public function list(){
+        include __DIR__ . '/../../src/views/product/list.php';
+>>>>>>> 63ba0037a64ef6dc88e139907ce4a86d1a6133b6
     }
 }

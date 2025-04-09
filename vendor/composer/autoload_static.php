@@ -7,12 +7,18 @@ namespace Composer\Autoload;
 class ComposerStaticInit9975c78608d973019f60a3e20152e0b7
 {
     public static $files = array (
+<<<<<<< HEAD
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+=======
+>>>>>>> 63ba0037a64ef6dc88e139907ce4a86d1a6133b6
         '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+<<<<<<< HEAD
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
+=======
+>>>>>>> 63ba0037a64ef6dc88e139907ce4a86d1a6133b6
         '89efb1254ef2d1c5d80096acd12c4098' => __DIR__ . '/..' . '/twig/twig/src/Resources/core.php',
         'ffecb95d45175fd40f75be8a23b34f90' => __DIR__ . '/..' . '/twig/twig/src/Resources/debug.php',
         'c7baa00073ee9c61edf148c51917cfb4' => __DIR__ . '/..' . '/twig/twig/src/Resources/escaper.php',
@@ -35,7 +41,10 @@ class ComposerStaticInit9975c78608d973019f60a3e20152e0b7
             'Psr\\Http\\Server\\' => 16,
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Container\\' => 14,
+<<<<<<< HEAD
             'PhpParser\\' => 10,
+=======
+>>>>>>> 63ba0037a64ef6dc88e139907ce4a86d1a6133b6
         ),
         'L' => 
         array (
@@ -46,10 +55,13 @@ class ComposerStaticInit9975c78608d973019f60a3e20152e0b7
         array (
             'FastRoute\\' => 10,
         ),
+<<<<<<< HEAD
         'D' => 
         array (
             'DeepCopy\\' => 9,
         ),
+=======
+>>>>>>> 63ba0037a64ef6dc88e139907ce4a86d1a6133b6
         'A' => 
         array (
             'Aydom\\Ecomerce\\' => 15,
@@ -81,17 +93,25 @@ class ComposerStaticInit9975c78608d973019f60a3e20152e0b7
         ),
         'Psr\\Http\\Message\\' => 
         array (
+<<<<<<< HEAD
             0 => __DIR__ . '/..' . '/psr/http-factory/src',
             1 => __DIR__ . '/..' . '/psr/http-message/src',
+=======
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+>>>>>>> 63ba0037a64ef6dc88e139907ce4a86d1a6133b6
         ),
         'Psr\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
+<<<<<<< HEAD
         'PhpParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
+=======
+>>>>>>> 63ba0037a64ef6dc88e139907ce4a86d1a6133b6
         'League\\Route\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/route/src',
@@ -104,10 +124,13 @@ class ComposerStaticInit9975c78608d973019f60a3e20152e0b7
         array (
             0 => __DIR__ . '/..' . '/nikic/fast-route/src',
         ),
+<<<<<<< HEAD
         'DeepCopy\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
         ),
+=======
+>>>>>>> 63ba0037a64ef6dc88e139907ce4a86d1a6133b6
         'Aydom\\Ecomerce\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
@@ -120,6 +143,7 @@ class ComposerStaticInit9975c78608d973019f60a3e20152e0b7
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+<<<<<<< HEAD
         'PHPUnit\\Event\\Application\\Finished' => __DIR__ . '/..' . '/phpunit/phpunit/src/Event/Events/Application/Finished.php',
         'PHPUnit\\Event\\Application\\FinishedSubscriber' => __DIR__ . '/..' . '/phpunit/phpunit/src/Event/Events/Application/FinishedSubscriber.php',
         'PHPUnit\\Event\\Application\\Started' => __DIR__ . '/..' . '/phpunit/phpunit/src/Event/Events/Application/Started.php',
@@ -1294,6 +1318,8 @@ class ComposerStaticInit9975c78608d973019f60a3e20152e0b7
         'TheSeer\\Tokenizer\\TokenCollectionException' => __DIR__ . '/..' . '/theseer/tokenizer/src/TokenCollectionException.php',
         'TheSeer\\Tokenizer\\Tokenizer' => __DIR__ . '/..' . '/theseer/tokenizer/src/Tokenizer.php',
         'TheSeer\\Tokenizer\\XMLSerializer' => __DIR__ . '/..' . '/theseer/tokenizer/src/XMLSerializer.php',
+=======
+>>>>>>> 63ba0037a64ef6dc88e139907ce4a86d1a6133b6
     );
 
     public static function getInitializer(ClassLoader $loader)
