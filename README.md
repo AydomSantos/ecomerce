@@ -19,11 +19,6 @@ Este projeto é uma aplicação de e-commerce desenvolvida utilizando PHP, HTML,
 
 ## Funcionalidades Implementadas
 - Listagem de produtos
-- Detalhes de produtos com múltiplas imagens
-- Gerenciamento de categorias
-- Adição ao carrinho
-- Processamento de pagamentos
-- Autenticação de usuários
 - Testes unitários para validação de componentes
 
 ## Configuração e Execução
