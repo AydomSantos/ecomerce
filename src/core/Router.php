@@ -12,7 +12,29 @@ class Router {
     public function dispatch(){
         $method = $_SERVER['REQUEST_METHOD'];
         $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-
+        
+        // Handle query string parameters for controller and action
+        $queryParams = [];
+        parse_str(parse_url($_SERVER['REQUEST_URI'], PHP_URL_QUERY) ?? '', $queryParams);
+        
+        // Check if we have controller and action in query parameters
+        if (isset($queryParams['c']) && isset($queryParams['a'])) {
+            $controller = $queryParams['c'];
+            $action = $queryParams['a'];
+            
+            // Convert to proper namespace and class name
+            $controllerClass = "Aydom\\Ecomerce\\Controllers\\" . ucfirst($controller) . "Controller";
+            
+            if (class_exists($controllerClass)) {
+                $controllerInstance = new $controllerClass($GLOBALS['conn']);
+                
+                if (method_exists($controllerInstance, $action)) {
+                    return $controllerInstance->$action();
+                }
+            }
+        }
+        
+        // If no query parameters or invalid controller/action, continue with regular routing
         foreach($this->routes[$method] ?? [] as $route => $handler){
             if($route === $path){
                 return $this->callHandler($handler);
@@ -25,7 +47,7 @@ class Router {
 
     public function callHandler($handler){
         if(is_callable($handler)){
-            return $handler;
+            return $handler();
         }
 
         if (is_string($handler)){
@@ -34,8 +56,10 @@ class Router {
 
             if(class_exists($controller)){
                 return (new $controller)->$method();
-                }
             }
         }
+        
+        return null;
     }
+}
 ?>

@@ -37,7 +37,6 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
-<<<<<<< HEAD
         'myclabs/deep-copy' => array(
             'pretty_version' => '1.13.0',
             'version' => '1.13.0.0',
@@ -47,8 +46,6 @@
             'aliases' => array(),
             'dev_requirement' => true,
         ),
-=======
->>>>>>> 63ba0037a64ef6dc88e139907ce4a86d1a6133b6
         'nikic/fast-route' => array(
             'pretty_version' => 'v1.3.0',
             'version' => '1.3.0.0',
@@ -58,7 +55,6 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
-<<<<<<< HEAD
         'nikic/php-parser' => array(
             'pretty_version' => 'v5.4.0',
             'version' => '5.4.0.0',
@@ -68,8 +64,6 @@
             'aliases' => array(),
             'dev_requirement' => true,
         ),
-=======
->>>>>>> 63ba0037a64ef6dc88e139907ce4a86d1a6133b6
         'orno/http' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -82,7 +76,6 @@
                 0 => '~1.0',
             ),
         ),
-<<<<<<< HEAD
         'phar-io/manifest' => array(
             'pretty_version' => '2.0.4',
             'version' => '2.0.4.0',
@@ -155,8 +148,6 @@
             'aliases' => array(),
             'dev_requirement' => true,
         ),
-=======
->>>>>>> 63ba0037a64ef6dc88e139907ce4a86d1a6133b6
         'psr/container' => array(
             'pretty_version' => '2.0.2',
             'version' => '2.0.2.0',
@@ -211,7 +202,6 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
-<<<<<<< HEAD
         'sebastian/cli-parser' => array(
             'pretty_version' => '2.0.1',
             'version' => '2.0.1.0',
@@ -347,8 +337,6 @@
             'aliases' => array(),
             'dev_requirement' => true,
         ),
-=======
->>>>>>> 63ba0037a64ef6dc88e139907ce4a86d1a6133b6
         'symfony/deprecation-contracts' => array(
             'pretty_version' => 'v3.5.1',
             'version' => '3.5.1.0',
@@ -376,7 +364,6 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
-<<<<<<< HEAD
         'theseer/tokenizer' => array(
             'pretty_version' => '1.2.3',
             'version' => '1.2.3.0',
@@ -386,8 +373,6 @@
             'aliases' => array(),
             'dev_requirement' => true,
         ),
-=======
->>>>>>> 63ba0037a64ef6dc88e139907ce4a86d1a6133b6
         'twig/twig' => array(
             'pretty_version' => 'v3.20.0',
             'version' => '3.20.0.0',

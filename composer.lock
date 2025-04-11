@@ -4,11 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
     "content-hash": "15a02777ccbdb265209a2ac24475819c",
-=======
-    "content-hash": "0654e1095f4ae5c8753d258635961387",
->>>>>>> 63ba0037a64ef6dc88e139907ce4a86d1a6133b6
     "packages": [
         {
             "name": "laravel/serializable-closure",
@@ -842,7 +838,6 @@
             "time": "2025-02-13T08:34:43+00:00"
         }
     ],
-<<<<<<< HEAD
     "packages-dev": [
         {
             "name": "myclabs/deep-copy",
@@ -2469,9 +2464,6 @@
             "time": "2024-03-03T12:36:25+00:00"
         }
     ],
-=======
-    "packages-dev": [],
->>>>>>> 63ba0037a64ef6dc88e139907ce4a86d1a6133b6
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {},

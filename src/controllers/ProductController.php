@@ -1,50 +1,101 @@
 <?php
-<<<<<<< HEAD
 namespace Aydom\Ecomerce\Controllers;
+
 use Aydom\Ecomerce\Models\Product;
+use Aydom\Ecomerce\Models\Category;
 
 class ProductController {
+    private $conn;
     private $productModel;
+    private $categoryModel;
 
-    public function __construct($conn){
+    public function __construct($conn) {
+        $this->conn = $conn;
         $this->productModel = new Product($conn);
+        $this->categoryModel = new Category($conn); 
     }
 
-    public function list(){
-        try{
-            $filters = [];
-            if(isset($_GET['categorias'])){
-                $filters['i_id_categorias'] = $_GET['categorias'];
-            }
-
-            if(isset($_GET['search'])){
-                $filters['search'] = $_GET['search'];
-            }
-
-            $produtos = $this->productModel->getAll($filters);
-
-            // Renderizar a view
-            include __DIR__ . '/../views/product/list.php';
-
-        }catch(\Exception $e){
-            echo "Erro ao listar produtos: " . $e->getMessage();
+    public function list() {
+        // Obter filtros da URL
+        $filters = [];
+        
+        if (isset($_GET['categorias'])) {
+            $filters['i_id_categorias'] = $_GET['categorias'];
         }
+        
+        if (isset($_GET['search'])) {
+            $filters['search'] = $_GET['search'];
+        }
+        
+        if (isset($_GET['min_price'])) {
+            $filters['min_price'] = $_GET['min_price'];
+        }
+        
+        if (isset($_GET['max_price'])) {
+            $filters['max_price'] = $_GET['max_price'];
+        }
+        
+        // Obter ordenação
+        $sort = $_GET['sort'] ?? 'name_asc';
+        
+        // Obter produtos com filtros
+        $produtos = $this->productModel->getAll($filters, $sort);
+        
+        // Obter todas as categorias para o filtro
+        $categorias = $this->categoryModel->getAll();
+        
+        // Incluir a view
+        include __DIR__ . '/../views/product/list.php';
     }
-
-    public function detal($id){
-        try{
-            $produtos = $this->productModel->getById($id);
-            if(!$produtos){
+    
+    public function detail() {
+        try {
+            // Get product ID from URL
+            $id = isset($_GET['id']) ? $_GET['id'] : null;
+            
+            if (!$id) {
                 header("Location: index.php?c=product&a=list");
                 exit;
             }
-
-            // Buscar imahens do produto
+            
+            // Get product details
+            $produto = $this->productModel->getById($id);
+            
+            if (!$produto) {
+                header("Location: index.php?c=product&a=list");
+                exit;
+            }
+            
+            // Get product images
             $imagens = $this->productModel->getImages($id);
-            // Renderizar a view
+            
+            // Get related products (optional)
+            $categoria_id = $produto['i_id_categorias'] ?? null;
+            $produtos_relacionados = [];
+            
+            if ($categoria_id) {
+                // Get products from the same category, excluding the current product
+                $filters = ['i_id_categorias' => $categoria_id];
+                $related = $this->productModel->getAll($filters);
+                
+                // Filter out the current product
+                foreach ($related as $rel) {
+                    if ($rel['i_id_produtos'] != $id) {
+                        $produtos_relacionados[] = $rel;
+                    }
+                    
+                    // Limit to 4 related products
+                    if (count($produtos_relacionados) >= 4) {
+                        break;
+                    }
+                }
+            }
+            
+            // Render the view
             include __DIR__ . '/../views/product/detail.php';
-        }catch(\Exception $e){
-            echo "Erro ao detalhar produto: ". $e->getMessage();
+            
+        } catch (\Exception $e) {
+            echo "Erro ao exibir detalhes do produto: " . $e->getMessage();
         }
     }
 
@@ -180,12 +231,5 @@ class ProductController {
 
         // Renderizar confirmação
         include __DIR__ . '/../views/product/delete.php';
-=======
-namespace App\Controllers; 
-
-class ProductController {
-    public function list(){
-        include __DIR__ . '/../../src/views/product/list.php';
->>>>>>> 63ba0037a64ef6dc88e139907ce4a86d1a6133b6
     }
 }

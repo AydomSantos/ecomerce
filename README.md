@@ -7,36 +7,40 @@ Este projeto é uma aplicação de e-commerce desenvolvida utilizando PHP, HTML,
 - **src**: Contém o código fonte principal, incluindo controladores, modelos, serviços e visualizações.
 - **public**: Diretório acessível ao público, contendo arquivos CSS, JavaScript e imagens.
 - **database**: Scripts de migração e seeds para configuração do banco de dados.
-<<<<<<< HEAD
 - **tests**: Contém scripts de teste para validar a funcionalidade dos componentes.
-=======
->>>>>>> 63ba0037a64ef6dc88e139907ce4a86d1a6133b6
 - **vendor**: Dependências gerenciadas pelo Composer.
 
 ## Tecnologias Utilizadas
 - **PHP**: Linguagem de programação para lógica de servidor.
 - **HTML/CSS**: Para estrutura e estilo das páginas web.
 - **JavaScript**: Para interatividade no lado do cliente.
+- **Tailwind CSS**: Framework CSS para design responsivo e moderno.
+- **Font Awesome**: Biblioteca de ícones para melhorar a interface do usuário.
 - **Composer**: Gerenciador de dependências PHP.
-<<<<<<< HEAD
 - **PDO**: Para conexão e operações com banco de dados.
 
 ## Funcionalidades Implementadas
-- Listagem de produtos
-- Detalhes de produtos com múltiplas imagens
-- Gerenciamento de categorias
-- Adição ao carrinho
-- Processamento de pagamentos
+- Listagem de produtos com filtros por categoria e preço
+- Sistema de busca de produtos
+- Ordenação de produtos por nome e preço
+- Visualização detalhada de produtos com múltiplas imagens
+- Seleção de quantidade na página de produto
+- Exibição de produtos relacionados
+- Interface responsiva adaptada para dispositivos móveis e desktop
 - Autenticação de usuários
 - Testes unitários para validação de componentes
-=======
->>>>>>> 63ba0037a64ef6dc88e139907ce4a86d1a6133b6
+
+## Design e Interface
+- Interface moderna e minimalista usando Tailwind CSS
+- Design responsivo para todos os tamanhos de tela
+- Animações sutis para melhorar a experiência do usuário
+- Exibição de produtos em cards com informações essenciais
+- Página de detalhes com layout otimizado para conversão
 
 ## Configuração e Execução
 1. Instale o XAMPP para configurar o ambiente PHP.
 2. Clone o repositório para o diretório `htdocs` do XAMPP.
 3. Execute o servidor Apache e MySQL através do painel de controle do XAMPP.
-<<<<<<< HEAD
 4. Importe o esquema de banco de dados a partir dos scripts em `/database`.
 5. Acesse a aplicação via navegador em `http://localhost/ecomerce`.
 
@@ -59,9 +63,3 @@ O sistema utiliza um banco de dados MySQL com as seguintes tabelas principais:
 - **categorias**: Armazena as categorias de produtos
 - **produtos**: Armazena informações dos produtos
 - **product_images**: Armazena múltiplas imagens para cada produto
-=======
-4. Acesse a aplicação via navegador em `http://localhost/ecomerce`.
-
-## Contribuição
-Para contribuir com o projeto, faça um fork do repositório e envie um pull request com suas alterações.
->>>>>>> 63ba0037a64ef6dc88e139907ce4a86d1a6133b6
