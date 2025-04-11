@@ -20,6 +20,7 @@ Este projeto é uma aplicação de e-commerce desenvolvida utilizando PHP, HTML,
 - **PDO**: Para conexão e operações com banco de dados.
 
 ## Funcionalidades Implementadas
+<<<<<<< HEAD
 - Listagem de produtos com filtros por categoria e preço
 - Sistema de busca de produtos
 - Ordenação de produtos por nome e preço
@@ -36,6 +37,10 @@ Este projeto é uma aplicação de e-commerce desenvolvida utilizando PHP, HTML,
 - Animações sutis para melhorar a experiência do usuário
 - Exibição de produtos em cards com informações essenciais
 - Página de detalhes com layout otimizado para conversão
+=======
+- Listagem de produtos
+- Testes unitários para validação de componentes
+>>>>>>> 921df7f803ccb5fb6183514797da8f89f224e9c0
 
 ## Configuração e Execução
 1. Instale o XAMPP para configurar o ambiente PHP.
@@ -62,4 +67,13 @@ Para contribuir com o projeto, faça um fork do repositório e envie um pull req
 O sistema utiliza um banco de dados MySQL com as seguintes tabelas principais:
 - **categorias**: Armazena as categorias de produtos
 - **produtos**: Armazena informações dos produtos
+<<<<<<< HEAD
 - **product_images**: Armazena múltiplas imagens para cada produto
+=======
+- **product_images**: Armazena múltiplas imagens para cada produto
+4. Acesse a aplicação via navegador em `http://localhost/ecomerce`.
+
+## Contribuição
+Para contribuir com o projeto, faça um fork do repositório e envie um pull request com suas alterações.
+
+>>>>>>> 921df7f803ccb5fb6183514797da8f89f224e9c0
